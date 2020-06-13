@@ -110,6 +110,6 @@ app.get('/', (req, res) => {
     res.send("Ok");
 })
 
-app.listen(8000, function () {
+app.listen(process.env.PORT || 8000, function () {
     console.log("Server running on port 8000.")
 })
